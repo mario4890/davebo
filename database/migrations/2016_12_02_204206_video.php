@@ -18,6 +18,7 @@ class Video extends Migration
             $table->string('name');
             $table->string('url');
             $table->string('description');
+            $table->string('row');
             $table->rememberToken();
             $table->timestamps();
         });
