@@ -1,3 +1,127 @@
-div {
-    font-size: 20px;
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0px;
+    background: transparent url('img/poster.jpg') fixed no-repeat center center;
+    background-size: cover;
+}
+#wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 472px;
+    height: 190px;
+    margin-top: -95px;
+    margin-left: -236px;
+}
+
+#wrapper .icons {
+    padding-top: 39px;
+}
+#wrapper .icons .right {
+    float: right;
+}
+#wrapper .icons a {
+    margin-right: 4px;
+}
+#wrapper .icons a .icon {
+    display: inline-block;
+    height: 16px;
+    background: transparent url('img/ikony.png') scroll no-repeat top left;
+    text-indent: -10000px;
+}
+#wrapper .icons .icon.hd {
+    width: 26px;
+    background-position: 0px 0px;
+}
+#wrapper .icons .icon.hd:hover {
+    background-position: 0px -16px;
+}
+#wrapper .icons .icon.sd {
+    width: 26px;
+    background-position: -30px 0px;
+}
+#wrapper .icons .icon.sd:hover {
+    background-position: -30px -16px;
+}
+#wrapper .icons .icon.mute {
+    width: 9px;
+    background-position: -122px 0px;
+}
+#wrapper .icons .icon.mute:hover {
+    background-position: -122px -16px;
+}
+#wrapper .icons .icon.sound {
+    width: 17px;
+    background-position: -143px 0px;
+}
+#wrapper .icons .icon.sound:hover {
+    background-position: -143px -16px;
+}
+#author {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 2;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 5px;
+}
+#author a {
+    color: #ffffff;
+}
+#bg {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.after {
+    position: absolute;
+    z-index: 2;
+    background: black;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.contents {
+    color: red;
+    font-weight: 900;
+    opacity: 1;
+    padding: 20px;
+}
+
+.middle {
+    position: absolute;
+    z-index: 2;
+    top: 500px;
+}
+
+.secound {
+    position: absolute;
+    z-index: 2;
+    top: 1000px;
+}
+
+.video-container {
+    position: absolute;
+    z-index: 2;
+    top: 1200px;
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+}
+
+.single-video {
+    height: 300px;
 }
