@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/', 'GeneralController@index');
+Route::resource('/', 'GeneralController');

@@ -16,8 +16,22 @@
     <div class="contents">ALE ON GRA :P</div>
 </div>
 
-<div class="after middle">
-    <div class="contents">Zjedź w dół</div>
+<div class="video-container">
+    <div class="row">
+        <iframe class="col-lg-4 single-video" src="https://www.youtube.com/embed/uw9D-38xSHA" frameborder="0" allowfullscreen></iframe>
+        <iframe class="col-lg-4 single-video" src="https://www.youtube.com/embed/VWkP5EdjBsQ" frameborder="0" allowfullscreen></iframe>
+        <iframe class="col-lg-4 single-video" src="https://www.youtube.com/embed/RgbSWxZvrXA" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="row">
+        <iframe class="col-lg-4 single-video" src="https://www.youtube.com/embed/AWS8tPRvMjs" frameborder="0" allowfullscreen></iframe>
+        <iframe class="col-lg-4 single-video" src="https://www.youtube.com/embed/99DRO_HuaDM" frameborder="0" allowfullscreen></iframe>
+        <iframe class="col-lg-4 single-video" src="https://www.youtube.com/embed/Fj_Ohba0VFM" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="row">
+        <iframe class="col-lg-4 single-video" src="https://www.youtube.com/embed/8qNHH69BktE" frameborder="0" allowfullscreen></iframe>
+        <iframe class="col-lg-4 single-video" src="https://www.youtube.com/embed/OQJs_qRE4mA" frameborder="0" allowfullscreen></iframe>
+        <iframe class="col-lg-4 single-video" src="https://www.youtube.com/embed/uIHxCvooD48" frameborder="0" allowfullscreen></iframe>
+    </div>
 </div>
 <div class="after secound">
     <div class="contents">ALE ON GRA :P</div>

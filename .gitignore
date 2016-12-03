@@ -7,3 +7,4 @@ Homestead.yaml
 .env
 /nbproject
 /public/video/*
+/config/database.php
