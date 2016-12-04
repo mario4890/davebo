@@ -12,15 +12,16 @@ $video.remove();
 }
 });
 
-$(document).on('click', '#volume', function() {
+$(document).on('click', '.js-volume', function() {
     var $volume     = $(this);
     var $video      = $('#bg');
     
     if ($video.prop('muted')) {
         $video.prop('muted', false);
-            $('#volume').attr('src', 'http://localhost:8000/graph/volumeOn.png');
+            $('.js-volume').attr('src', 'http://localhost:8000/graph/volumeOn.png');
         } else {
             $video.prop('muted', true);
-            $('#volume').attr('src', 'http://localhost:8000/graph/volumeOff.png');
+            $('.js-volume').attr('src', 'http://localhost:8000/graph/volumeOff.png');
         }
 });
+
