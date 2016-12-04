@@ -10,18 +10,17 @@ var $video = $('#bg');
 $video.remove();
         $('#wrapper nav').remove();
 }
+});
 
-var player;
-
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('ytplayer', {
-        events: {
-            'onReady': onPlayerReady
+$(document).on('click', '#volume', function() {
+    var $volume     = $(this);
+    var $video      = $('#bg');
+    
+    if ($video.prop('muted')) {
+        $video.prop('muted', false);
+            $('#volume').attr('src', 'http://localhost:8000/graph/volumeOn.png');
+        } else {
+            $video.prop('muted', true);
+            $('#volume').attr('src', 'http://localhost:8000/graph/volumeOff.png');
         }
-    });
-}
-
-function onPlayerReady(event) {
-    player.mute();
-    player.playVideo();
-}
+});

@@ -17,7 +17,7 @@
     </div>
 </section>
 
-<video id="bg" autoplay="autoplay" loop="loop" controls muted>
+<video id="bg" autoplay="autoplay" loop="loop" muted>
     <source src="{{ URL::asset('video/FunkinDance.webm') }}" type="video/webm" />
     <source src="{{ URL::asset('video/FunkinDance.mp4') }}" type="video/mp4" />
 </video>
