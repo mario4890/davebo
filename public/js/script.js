@@ -11,31 +11,17 @@ $video.remove();
         $('#wrapper nav').remove();
 }
 
-$('#video_button_mute').on('click', function(e) {
-var $this = $(this), $icon = $('.icon', $this);
-        e.preventDefault();
-        if ($video.prop('muted')) {
-$video.prop('muted', false);
-        $icon.removeClass('mute').addClass('sound');
-} else {
-$video.prop('muted', true);
-        $icon.removeClass('sound').addClass('mute');
-}
-});
-        $('#video_button_quality').on('click', function(e) {
-var $this = $(this), $icon = $('.icon', $this);
-        e.preventDefault();
-        if ($icon.hasClass('sd')) {
-$video.find('source').eq(0).attr('src', 'video/hd.webm');
-        $video.find('source').eq(1).attr('src', 'video/hd.mp4');
-        $icon.removeClass('sd').addClass('hd');
-} else {
-$video.find('source').eq(0).attr('src', 'video/sd.webm');
-        $video.find('source').eq(1).attr('src', 'video/sd.mp4');
-        $icon.removeClass('hd').addClass('sd');
+var player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('ytplayer', {
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
 }
 
-$video.get(0).load();
-        $video.get(0).play();
-});
-});
+function onPlayerReady(event) {
+    player.mute();
+    player.playVideo();
+}
