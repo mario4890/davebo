@@ -24,10 +24,10 @@ body {
     position: absolute;
     z-index: 2;
     width: 100%;
-    opacity: 1;
     height: 40px;
     bottom: 0px;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 #first {
@@ -36,44 +36,122 @@ body {
 
 #volume {
     position: absolute;
-    top: 12px;;
-}
-
-.black {
-    position: absolute;
-    z-index: 2;
-    background-color: black;
-    min-height: 100vh;
-    width: 100%;
+    margin-left: -30px;
 }
 
 .contents {
-    color: red;
+    color: white;
     font-weight: 900;
-    opacity: 1;
     padding: 20px;
+    background-color: #1C2226;
+    width: 100%;
+    text-align: center;
+    font-family: 'Aladin', sans-serif;
 }
 
-.middle {
-    position: absolute;
-    z-index: 2;
-    top: 500px;
+#about {
+    min-height: 100vh;
+    
 }
 
-.secound {
+.second {
     position: absolute;
     z-index: 2;
-    top: 1000px;
+    margin-top: 30%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    font-family: 'Aladin', sans-serif;
+    color: white;
 }
+
+#project {
+    min-height: 100vh;
+}
+
 
 .video-container {
     position: absolute;
     z-index: 2;
-    background-color: black;
+    margin-top: 15px;
+    background-color: #1C2226;
     width: 100%;
     padding: 20px;
+    font-family: 'Aladin', sans-serif;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#contact {
+    min-height: 100vh;
+}
+
+.third {
+    position: absolute;
+    z-index: 2;
+    margin-top: 25%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-family: 'Aladin', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    z-index: 3;
+    font-family: 'Aladin', sans-serif;
+}
+
+h3 {
+    color: #ff8700;
 }
 
 .single-video {
-    height: 300px;
+    padding-top: 20px;
+    height: 280px;
+}
+
+#created {
+    position: absolute;
+    z-index: 2;
+}
+
+#created a {
+    color: white;
+}
+
+#created a:hover {
+    color: red;
+}
+
+.navbar {
+    color: white;
+    z-index: 1000;
+    background-color: #1C2226;
+    font-family: 'Aladin', sans-serif;
+}
+
+.navbar-default {
+    border: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+
+.active {
+    color: black;
+}
+
+nav li a {
+    color: white;
+}
+
+p {
+    font-size: 18px;
+}
+
+.menu {
+    font-size: 18px;
 }
