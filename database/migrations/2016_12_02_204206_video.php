@@ -17,7 +17,8 @@ class Video extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('url');
-            $table->string('description');
+            $table->string('image');
+            $table->text('description');
             $table->tinyInteger('row')
                     ->unsigned();
             $table->rememberToken();
