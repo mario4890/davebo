@@ -12,3 +12,5 @@
 */
 
 Route::resource('/', 'GeneralController');
+
+Route::post('/','GeneralController@ajaxIndex');
